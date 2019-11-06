@@ -1,0 +1,216 @@
+
+Showing logs for build [32mhack19-hub-hello-world-spring-b-dwvcm-3[0m stage [32mfrom-build-pack[0m and container [32mstep-credential-initializer-pffv4[0m
+{"level":"warn","ts":1573021859.9536903,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1573021859.954431,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32mhack19-hub-hello-world-spring-b-dwvcm-3[0m stage [32mfrom-build-pack[0m and container [32mstep-working-dir-initializer-jnxfw[0m
+{"level":"warn","ts":1573021860.6205168,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1573021860.6218307,"logger":"fallback-logger","caller":"bash/main.go:65","msg":"Successfully executed command \"mkdir -p /workspace/source\""}
+
+Showing logs for build [32mhack19-hub-hello-world-spring-b-dwvcm-3[0m stage [32mfrom-build-pack[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32mhack19-hub-hello-world-spring-b-dwvcm-3[0m stage [32mfrom-build-pack[0m and container [32mstep-git-source-hack19-hub-hello-world-spring-b-hvgkf[0m
+{"level":"warn","ts":1573021867.7030969,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1573021868.1107626,"logger":"fallback-logger","caller":"git/git.go:102","msg":"Successfully cloned https://github.com/**********/hello-world-spring-boot.git @ master in path /workspace/source"}
+
+Showing logs for build [32mhack19-hub-hello-world-spring-b-dwvcm-3[0m stage [32mfrom-build-pack[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:cbdcfee405b466d21117291b2aa2af615c474c6a,1:bc87d726c965b705d3394e65f34da2e19466b0c8
+DEBUG: ran git fetch --unshallow origin bc87d726c965b705d3394e65f34da2e19466b0c8: cbdcfee405b466d21117291b2aa2af615c474c6a: in 
+DEBUG: ran git checkout master in 
+DEBUG: ran git reset --hard cbdcfee405b466d21117291b2aa2af615c474c6a in 
+DEBUG: ran clean --force -d . in 
+DEBUG: ran git merge bc87d726c965b705d3394e65f34da2e19466b0c8 in 
+Merged SHA bc87d726c965b705d3394e65f34da2e19466b0c8 with commit message 'Update Dockerfile' into base branch master
+Merged SHA fd08bacf0ea047dc650da002f904be21c2630e3a with commit message 'Merge branch 'master' into new-branch' into base branch master
+Merged SHA 40eec3644183dd835711779d78007b86a96a3467 with commit message 'check' into base branch master
+Merged SHA 314ebd8f1472b4b6e684bee7974c14a03c40b571 with commit message 'Update values.yaml' into base branch master
+Merged SHA e05f1f88248239db3ad2b6caf5df7e1491060ba2 with commit message 'Update Makefile' into base branch master
+Merged SHA c3f666fde90e42bb19728f17decd45c80b37f816 with commit message 'Update requirements.yaml' into base branch master
+Merged SHA 88489eeb03b2976a47b7b16860bbd9b703f44dda with commit message 'Update Makefile' into base branch master
+Merged SHA 58a844a419ab5c523da9935405f3323ba1e3803a with commit message 'Update skaffold.yaml' into base branch master
+
+Showing logs for build [32mhack19-hub-hello-world-spring-b-dwvcm-3[0m stage [32mfrom-build-pack[0m and container [32mstep-build-set-version[0m
+Picked up _JAVA_OPTIONS: -XX:+UnlockExperimentalVMOptions -XX:+UseCGroupMemoryLimitForHeap -Dsun.zip.disableMemoryMapping=true -XX:+UseParallelGC -XX:MinHeapFreeRatio=5 -XX:MaxHeapFreeRatio=10 -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Xms10m -Xmx192m
+OpenJDK 64-Bit Server VM warning: If the number of processors is expected to increase from one, then you should configure the number of parallel GC threads appropriately using -XX:ParallelGCThreads=N
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< com.example:myproject >------------------------
+[INFO] Building myproject 0.0.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- versions-maven-plugin:2.2:set (default-cli) @ myproject ---
+[INFO] Searching for local aggregator root...
+[INFO] Local aggregation root: /workspace/source
+[INFO] Processing change of com.example:myproject:0.0.1-SNAPSHOT -> 0.0.0-SNAPSHOT-PR-1-3
+[INFO] Processing com.example:myproject
+[INFO]     Updating project com.example:myproject
+[INFO]         from version 0.0.1-SNAPSHOT to 0.0.0-SNAPSHOT-PR-1-3
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  5.795 s
+[INFO] Finished at: 2019-11-06T06:31:18Z
+[INFO] ------------------------------------------------------------------------
+
+Showing logs for build [32mhack19-hub-hello-world-spring-b-dwvcm-3[0m stage [32mfrom-build-pack[0m and container [32mstep-build-mvn-install[0m
+Picked up _JAVA_OPTIONS: -XX:+UnlockExperimentalVMOptions -XX:+UseCGroupMemoryLimitForHeap -Dsun.zip.disableMemoryMapping=true -XX:+UseParallelGC -XX:MinHeapFreeRatio=5 -XX:MaxHeapFreeRatio=10 -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Xms10m -Xmx192m
+OpenJDK 64-Bit Server VM warning: If the number of processors is expected to increase from one, then you should configure the number of parallel GC threads appropriately using -XX:ParallelGCThreads=N
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< com.example:myproject >------------------------
+[INFO] Building myproject 0.0.0-SNAPSHOT-PR-1-3
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ myproject ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /workspace/source/src/main/resources
+[INFO] skip non existing resourceDirectory /workspace/source/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ myproject ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /workspace/source/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ myproject ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /workspace/source/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ myproject ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:3.0.0-M1:test (default-test) @ myproject ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.5:jar (default-jar) @ myproject ---
+[INFO] Building jar: /workspace/source/target/myproject-0.0.0-SNAPSHOT-PR-1-3.jar
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:1.3.1.RELEASE:repackage (default) @ myproject ---
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ myproject ---
+[INFO] Installing /workspace/source/target/myproject-0.0.0-SNAPSHOT-PR-1-3.jar to /root/.mvnrepository/com/example/myproject/0.0.0-SNAPSHOT-PR-1-3/myproject-0.0.0-SNAPSHOT-PR-1-3.jar
+[INFO] Installing /workspace/source/pom.xml to /root/.mvnrepository/com/example/myproject/0.0.0-SNAPSHOT-PR-1-3/myproject-0.0.0-SNAPSHOT-PR-1-3.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  8.399 s
+[INFO] Finished at: 2019-11-06T06:31:28Z
+[INFO] ------------------------------------------------------------------------
+
+Showing logs for build [32mhack19-hub-hello-world-spring-b-dwvcm-3[0m stage [32mfrom-build-pack[0m and container [32mstep-build-skaffold-version[0m
+v0.38.0
+
+Showing logs for build [32mhack19-hub-hello-world-spring-b-dwvcm-3[0m stage [32mfrom-build-pack[0m and container [32mstep-build-container-build[0m
+[36mINFO[0m[0000] Downloading base image java                  
+[36mINFO[0m[0001] Error while retrieving image from cache: getting file info: stat /workspace/sha256:c1ff613e8ba25833d2e1940da0940c3824f03f802c449f3d1815a66b7f8c0e9d: no such file or directory 
+[36mINFO[0m[0001] Downloading base image java                  
+[36mINFO[0m[0001] Executing 0 build triggers                   
+[36mINFO[0m[0001] Using files from context: [/workspace/source/target/myproject-0.0.0-SNAPSHOT-PR-1-3.jar] 
+[36mINFO[0m[0001] Using files from context: [/workspace/source/run.sh] 
+[36mINFO[0m[0001] Checking for cached layer 823024120868.dkr.ecr.us-west-2.amazonaws.com/todo/cache:bb9cdb704e7eee74ab0edda12724ab753df1c7bdd97ba2ff67e380b4db7075ff... 
+[36mINFO[0m[0001] No cached layer found for cmd RUN chmod a+x /run.sh 
+[36mINFO[0m[0001] Unpacking rootfs as cmd RUN chmod a+x /run.sh requires it. 
+[36mINFO[0m[0014] Taking snapshot of full filesystem...        
+[36mINFO[0m[0017] Using files from context: [/workspace/source/target/myproject-0.0.0-SNAPSHOT-PR-1-3.jar] 
+[36mINFO[0m[0017] ADD ./target/*.jar /myproject-0.0.1-SNAPSHOT.jar 
+[36mINFO[0m[0017] Taking snapshot of files...                  
+[36mINFO[0m[0017] Using files from context: [/workspace/source/run.sh] 
+[36mINFO[0m[0017] ADD ./run.sh /run.sh                         
+[36mINFO[0m[0017] Taking snapshot of files...                  
+[36mINFO[0m[0017] RUN chmod a+x /run.sh                        
+[36mINFO[0m[0017] cmd: /bin/sh                                 
+[36mINFO[0m[0017] args: [-c chmod a+x /run.sh]                 
+[36mINFO[0m[0017] Taking snapshot of full filesystem...        
+[36mINFO[0m[0020] EXPOSE 8080:8080                             
+[36mINFO[0m[0020] cmd: EXPOSE                                  
+[36mINFO[0m[0020] Adding exposed port: 8080:8080/tcp           
+[36mINFO[0m[0020] No files changed in this command, skipping snapshotting. 
+[36mINFO[0m[0020] CMD /run.sh                                  
+[36mINFO[0m[0020] No files changed in this command, skipping snapshotting. 
+[36mINFO[0m[0020] Pushing layer 823024120868.dkr.ecr.us-west-2.amazonaws.com/todo/cache:bb9cdb704e7eee74ab0edda12724ab753df1c7bdd97ba2ff67e380b4db7075ff to cache now 
+[33mWARN[0m[0020] error uploading layer to cache: failed to push to destination 823024120868.dkr.ecr.us-west-2.amazonaws.com/todo/cache:bb9cdb704e7eee74ab0edda12724ab753df1c7bdd97ba2ff67e380b4db7075ff: NAME_UNKNOWN: The repository with name 'todo/cache' does not exist in the registry with id '823024120868' 
+2019/11/06 06:31:50 pushed blob: sha256:687be95d7a383d8c45d06d52e647ce0c9e41ae075fbf872101dbda9d3590d619
+2019/11/06 06:31:50 pushed blob: sha256:425af4accf9721f34714d004dfe7c59cd48aa402c52afdb843097d642d236bcf
+2019/11/06 06:31:50 pushed blob: sha256:aada93195acebf2515e9417ffd366aaebc890613009ffa2a415fc34dcc47527c
+2019/11/06 06:31:50 pushed blob: sha256:60170fec2151d2108ed1420625c51138434ba4e0223d3023353d3f32ffe3cfc2
+2019/11/06 06:31:50 pushed blob: sha256:bb9cdec9c7f337940f7d872274353b66e118412cbfd433c711361bcf7922aea4
+2019/11/06 06:31:50 pushed blob: sha256:11f7af24ed9cf47597dd6cf9963bb3e9109c963f0135e869a9e9b4999fdc12a3
+2019/11/06 06:31:50 pushed blob: sha256:e98f73de8f0d2ef292f58b004d67bc6e9ee779dcfaff7ebb3964649d4787b872
+2019/11/06 06:31:51 pushed blob: sha256:d13440149946948ef4a58571883fe9543b2c136353fb3dec35b58346e9f22db1
+2019/11/06 06:31:53 pushed blob: sha256:fce5728aad85a763fe3c419db16885eb6f7a670a42824ea618414b8fb309ccde
+2019/11/06 06:31:55 pushed blob: sha256:76610ec20bf5892e24cebd4153c7668284aa1d1151b7c3b0c7d50c579aa5ce75
+2019/11/06 06:31:57 pushed blob: sha256:5040bd2983909aa8896b9932438c3f1479d25ae837a5f6220242a264d0221f2d
+2019/11/06 06:32:06 pushed blob: sha256:49e2d6393f32abb1de7c9395c04c822ceb2287383d5a90998f7bd8dbfd43d48c
+2019/11/06 06:32:06 823024120868.dkr.ecr.us-west-2.amazonaws.com/**********/hello-world-spring-boot:0.0.0-SNAPSHOT-PR-1-3: digest: sha256:f649f2a24cd018e1c05249138ef19dbb7492fb61d9c790f02a25ccda3071944e size: 2056
+
+Showing logs for build [32mhack19-hub-hello-world-spring-b-dwvcm-3[0m stage [32mfrom-build-pack[0m and container [32mstep-postbuild-post-build[0m
+no CVE provider running in the current ** namespace so skip adding image to be analysed
+
+Showing logs for build [32mhack19-hub-hello-world-spring-b-dwvcm-3[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-make-preview[0m
+sed -i -e "s/version:.*/version: 0.0.0-SNAPSHOT-PR-1-3/" Chart.yaml
+sed -i -e "s/version:.*/version: 0.0.0-SNAPSHOT-PR-1-3/" ../*/Chart.yaml
+sed -i -e "s|repository:.*|repository: 823024120868.dkr.ecr.us-west-2.amazonaws.com\/**********\/hello-world-spring-boot|" values.yaml
+sed -i -e "s/tag:.*/tag: 0.0.0-SNAPSHOT-PR-1-3/" values.yaml
+echo "  version: 0.0.0-SNAPSHOT-PR-1-3" >> requirements.yaml
+** step helm build
+WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Adding missing Helm repo: storage.googleapis.com https://storage.googleapis.com/chartmuseum.jenkins-x.io
+Successfully added Helm repository storage.googleapis.com.
+Adding missing Helm repo: jenkins-x-chartmuseum http://jenkins-x-chartmuseum:8080
+Successfully added Helm repository jenkins-x-chartmuseum.
+WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Adding missing Helm repo: chartmuseum.jenkins-x.io http://chartmuseum.jenkins-x.io
+Successfully added Helm repository chartmuseum.jenkins-x.io.
+
+Showing logs for build [32mhack19-hub-hello-world-spring-b-dwvcm-3[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-jx-preview[0m
+Creating a preview
+Commit author email is empty for: 58a844a419ab5c523da9935405f3323ba1e3803a
+Looking for commits in: /workspace/source/
+Commit author email is empty for: 88489eeb03b2976a47b7b16860bbd9b703f44dda
+Looking for commits in: /workspace/source/
+Commit author email is empty for: c3f666fde90e42bb19728f17decd45c80b37f816
+Looking for commits in: /workspace/source/
+Commit author email is empty for: e05f1f88248239db3ad2b6caf5df7e1491060ba2
+Looking for commits in: /workspace/source/
+Commit author email is empty for: 314ebd8f1472b4b6e684bee7974c14a03c40b571
+Looking for commits in: /workspace/source/
+WARNING: No author for commit: 40eec3644183dd835711779d78007b86a96a3467
+Commit author email is empty for: fd08bacf0ea047dc650da002f904be21c2630e3a
+Looking for commits in: /workspace/source/
+Commit author email is empty for: bc87d726c965b705d3394e65f34da2e19466b0c8
+Looking for commits in: /workspace/source/
+Found commit author match for: ********** with email address: 56089989+**********@users.noreply.github.com
+Created environment **********-hello-world-spring-boot-pr-1
+Namespace **-**********-hello-world-spring-boot-pr-1 created 
+expose:
+  Annotations:
+    helm.sh/hook: post-install,post-upgrade
+    helm.sh/hook-delete-policy: hook-succeeded
+  config:
+    domain: app.jenkins-x.tk
+    exposer: Ingress
+    http: "true"
+preview:
+  image:
+    repository: 823024120868.dkr.ecr.us-west-2.amazonaws.com/**********/hello-world-spring-boot
+    tag: 0.0.0-SNAPSHOT-PR-1-3
+Cloning the Jenkins X versions repo https://github.com/jenkins-x/jenkins-x-versions.git with ref refs/heads/master to /builder/home/.**/jenkins-x-versions
+
+
+Updating PipelineActivities **********-hello-world-spring-boot-pr-1-3 which has status Running
+WARNING: preview application http://hello-world-spring-boot.**-**********-hello-world-spring-boot-pr-1.app.jenkins-x.tk not available, error was 503 503 Service Temporarily Unavailable, delaying for: 1.044155573s
+WARNING: preview application http://hello-world-spring-boot.**-**********-hello-world-spring-boot-pr-1.app.jenkins-x.tk not available, error was 503 503 Service Temporarily Unavailable, delaying for: 2.215375303s
+WARNING: preview application http://hello-world-spring-boot.**-**********-hello-world-spring-boot-pr-1.app.jenkins-x.tk not available, error was 503 503 Service Temporarily Unavailable, delaying for: 2.088803434s
+WARNING: preview application http://hello-world-spring-boot.**-**********-hello-world-spring-boot-pr-1.app.jenkins-x.tk not available, error was 503 503 Service Temporarily Unavailable, delaying for: 4.086811784s
+WARNING: preview application http://hello-world-spring-boot.**-**********-hello-world-spring-boot-pr-1.app.jenkins-x.tk not available, error was 503 503 Service Temporarily Unavailable, delaying for: 5.794232649s
+WARNING: preview application http://hello-world-spring-boot.**-**********-hello-world-spring-boot-pr-1.app.jenkins-x.tk not available, error was 503 503 Service Temporarily Unavailable, delaying for: 5.933226918s
+WARNING: preview application http://hello-world-spring-boot.**-**********-hello-world-spring-boot-pr-1.app.jenkins-x.tk not available, error was 503 503 Service Temporarily Unavailable, delaying for: 11.366341479s
+WARNING: preview application http://hello-world-spring-boot.**-**********-hello-world-spring-boot-pr-1.app.jenkins-x.tk not available, error was 503 503 Service Temporarily Unavailable, delaying for: 16.375888286s
+WARNING: preview application http://hello-world-spring-boot.**-**********-hello-world-spring-boot-pr-1.app.jenkins-x.tk not available, error was 503 503 Service Temporarily Unavailable, delaying for: 13.59158686s
+WARNING: preview application http://hello-world-spring-boot.**-**********-hello-world-spring-boot-pr-1.app.jenkins-x.tk not available, error was 503 503 Service Temporarily Unavailable, delaying for: 38.381630922s
+WARNING: preview application http://hello-world-spring-boot.**-**********-hello-world-spring-boot-pr-1.app.jenkins-x.tk not available, error was 503 503 Service Temporarily Unavailable, delaying for: 1m24.072969375s
+WARNING: preview application http://hello-world-spring-boot.**-**********-hello-world-spring-boot-pr-1.app.jenkins-x.tk not available, error was 503 503 Service Temporarily Unavailable, delaying for: 39.110604125s
+WARNING: preview application http://hello-world-spring-boot.**-**********-hello-world-spring-boot-pr-1.app.jenkins-x.tk not available, error was 503 503 Service Temporarily Unavailable, delaying for: 1m1.469985573s
+WARNING: preview application http://hello-world-spring-boot.**-**********-hello-world-spring-boot-pr-1.app.jenkins-x.tk not available, error was Get http://hello-world-spring-boot.**-**********-hello-world-spring-boot-pr-1.app.jenkins-x.tk: dial tcp: lookup hello-world-spring-boot.**-**********-hello-world-spring-boot-pr-1.app.jenkins-x.tk on 10.100.0.10:53: server misbehaving, delaying for: 42.988268799s
+error: error checking if preview application http://hello-world-spring-boot.**-**********-hello-world-spring-boot-pr-1.app.jenkins-x.tk is available: preview application http://hello-world-spring-boot.**-**********-hello-world-spring-boot-pr-1.app.jenkins-x.tk not available, error was Get http://hello-world-spring-boot.**-**********-hello-world-spring-boot-pr-1.app.jenkins-x.tk: dial tcp: lookup hello-world-spring-boot.**-**********-hello-world-spring-boot-pr-1.app.jenkins-x.tk on 10.100.0.10:53: server misbehaving
+[31m
+Pipeline failed on stage 'from-build-pack' : container 'step-promote-jx-preview'. The execution of the pipeline has stopped.[0m
