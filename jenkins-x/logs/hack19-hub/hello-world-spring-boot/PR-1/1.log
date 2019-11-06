@@ -1,0 +1,56 @@
+
+Showing logs for build [32mmeta-hack19-hub-hello-world-spr-qpcb8-1[0m stage [32mmeta-pipeline[0m and container [32mstep-credential-initializer-flllh[0m
+{"level":"warn","ts":1573021682.1991284,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1573021682.1997972,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32mmeta-hack19-hub-hello-world-spr-qpcb8-1[0m stage [32mmeta-pipeline[0m and container [32mstep-working-dir-initializer-dsj5n[0m
+{"level":"warn","ts":1573021682.4979343,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1573021682.4994838,"logger":"fallback-logger","caller":"bash/main.go:65","msg":"Successfully executed command \"mkdir -p /workspace/source\""}
+
+Showing logs for build [32mmeta-hack19-hub-hello-world-spr-qpcb8-1[0m stage [32mmeta-pipeline[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32mmeta-hack19-hub-hello-world-spr-qpcb8-1[0m stage [32mmeta-pipeline[0m and container [32mstep-git-source-meta-hack19-hub-hello-world-spr-prmcj[0m
+{"level":"warn","ts":1573021688.5544643,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1573021688.9660861,"logger":"fallback-logger","caller":"git/git.go:102","msg":"Successfully cloned https://github.com/**********/hello-world-spring-boot.git @ cbdcfee405b466d21117291b2aa2af615c474c6a in path /workspace/source"}
+
+Showing logs for build [32mmeta-hack19-hub-hello-world-spr-qpcb8-1[0m stage [32mmeta-pipeline[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:cbdcfee405b466d21117291b2aa2af615c474c6a,1:40eec3644183dd835711779d78007b86a96a3467
+DEBUG: ran git fetch --unshallow origin 40eec3644183dd835711779d78007b86a96a3467: cbdcfee405b466d21117291b2aa2af615c474c6a: in 
+DEBUG: ran git checkout master in 
+DEBUG: ran git reset --hard cbdcfee405b466d21117291b2aa2af615c474c6a in 
+DEBUG: ran clean --force -d . in 
+error: error during merge: merging 40eec3644183dd835711779d78007b86a96a3467 into master: git output: CONFLICT (rename/add): Rename charts/spring/Chart.yaml->charts/hello-world-spring-boot/Chart.yaml in 40eec3644183dd835711779d78007b86a96a3467.  Added charts/hello-world-spring-boot/Chart.yaml in HEAD
+Auto-merging charts/hello-world-spring-boot/Chart.yaml
+Automatic merge failed; fix conflicts and then commit the result.: failed to run 'git merge 40eec3644183dd835711779d78007b86a96a3467' command in directory '', output: 'CONFLICT (rename/add): Rename charts/spring/Chart.yaml->charts/hello-world-spring-boot/Chart.yaml in 40eec3644183dd835711779d78007b86a96a3467.  Added charts/hello-world-spring-boot/Chart.yaml in HEAD
+Auto-merging charts/hello-world-spring-boot/Chart.yaml
+Automatic merge failed; fix conflicts and then commit the result.'
+[31m
+Pipeline failed on stage 'meta-pipeline' : container 'step-git-merge'. The execution of the pipeline has stopped.[0m
+
+Showing logs for build [32mmeta-hack19-hub-hello-world-spr-qpcb8-1[0m stage [32mmeta-pipeline[0m and container [32mstep-credential-initializer-flllh[0m
+{"level":"warn","ts":1573021682.1991284,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1573021682.1997972,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32mmeta-hack19-hub-hello-world-spr-qpcb8-1[0m stage [32mmeta-pipeline[0m and container [32mstep-working-dir-initializer-dsj5n[0m
+{"level":"warn","ts":1573021682.4979343,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1573021682.4994838,"logger":"fallback-logger","caller":"bash/main.go:65","msg":"Successfully executed command \"mkdir -p /workspace/source\""}
+
+Showing logs for build [32mmeta-hack19-hub-hello-world-spr-qpcb8-1[0m stage [32mmeta-pipeline[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32mmeta-hack19-hub-hello-world-spr-qpcb8-1[0m stage [32mmeta-pipeline[0m and container [32mstep-git-source-meta-hack19-hub-hello-world-spr-prmcj[0m
+{"level":"warn","ts":1573021688.5544643,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1573021688.9660861,"logger":"fallback-logger","caller":"git/git.go:102","msg":"Successfully cloned https://github.com/**********/hello-world-spring-boot.git @ cbdcfee405b466d21117291b2aa2af615c474c6a in path /workspace/source"}
+
+Showing logs for build [32mmeta-hack19-hub-hello-world-spr-qpcb8-1[0m stage [32mmeta-pipeline[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:cbdcfee405b466d21117291b2aa2af615c474c6a,1:40eec3644183dd835711779d78007b86a96a3467
+DEBUG: ran git fetch --unshallow origin 40eec3644183dd835711779d78007b86a96a3467: cbdcfee405b466d21117291b2aa2af615c474c6a: in 
+DEBUG: ran git checkout master in 
+DEBUG: ran git reset --hard cbdcfee405b466d21117291b2aa2af615c474c6a in 
+DEBUG: ran clean --force -d . in 
+error: error during merge: merging 40eec3644183dd835711779d78007b86a96a3467 into master: git output: CONFLICT (rename/add): Rename charts/spring/Chart.yaml->charts/hello-world-spring-boot/Chart.yaml in 40eec3644183dd835711779d78007b86a96a3467.  Added charts/hello-world-spring-boot/Chart.yaml in HEAD
+Auto-merging charts/hello-world-spring-boot/Chart.yaml
+Automatic merge failed; fix conflicts and then commit the result.: failed to run 'git merge 40eec3644183dd835711779d78007b86a96a3467' command in directory '', output: 'CONFLICT (rename/add): Rename charts/spring/Chart.yaml->charts/hello-world-spring-boot/Chart.yaml in 40eec3644183dd835711779d78007b86a96a3467.  Added charts/hello-world-spring-boot/Chart.yaml in HEAD
+Auto-merging charts/hello-world-spring-boot/Chart.yaml
+Automatic merge failed; fix conflicts and then commit the result.'
+[31m
+Pipeline failed on stage 'meta-pipeline' : container 'step-git-merge'. The execution of the pipeline has stopped.[0m
