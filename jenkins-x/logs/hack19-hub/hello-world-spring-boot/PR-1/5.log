@@ -1,0 +1,111 @@
+
+Showing logs for build [32mhack19-hub-hello-world-spring-b-c5v4v-5[0m stage [32mfrom-build-pack[0m and container [32mstep-credential-initializer-8g576[0m
+{"level":"warn","ts":1573023529.6715221,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1573023529.6717942,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32mhack19-hub-hello-world-spring-b-c5v4v-5[0m stage [32mfrom-build-pack[0m and container [32mstep-working-dir-initializer-cjsdr[0m
+{"level":"warn","ts":1573023530.7523725,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1573023530.7537923,"logger":"fallback-logger","caller":"bash/main.go:65","msg":"Successfully executed command \"mkdir -p /workspace/source\""}
+
+Showing logs for build [32mhack19-hub-hello-world-spring-b-c5v4v-5[0m stage [32mfrom-build-pack[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32mhack19-hub-hello-world-spring-b-c5v4v-5[0m stage [32mfrom-build-pack[0m and container [32mstep-git-source-hack19-hub-hello-world-spring-b-cd5wl[0m
+{"level":"warn","ts":1573023536.8254588,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1573023537.2511332,"logger":"fallback-logger","caller":"git/git.go:102","msg":"Successfully cloned https://github.com/**********/hello-world-spring-boot.git @ master in path /workspace/source"}
+
+Showing logs for build [32mhack19-hub-hello-world-spring-b-c5v4v-5[0m stage [32mfrom-build-pack[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:cbdcfee405b466d21117291b2aa2af615c474c6a,1:cbff34449c17cbfe9d2921702f804055a71b1352
+DEBUG: ran git fetch --unshallow origin cbff34449c17cbfe9d2921702f804055a71b1352: cbdcfee405b466d21117291b2aa2af615c474c6a: in 
+DEBUG: ran git checkout master in 
+DEBUG: ran git reset --hard cbdcfee405b466d21117291b2aa2af615c474c6a in 
+DEBUG: ran clean --force -d . in 
+DEBUG: ran git merge cbff34449c17cbfe9d2921702f804055a71b1352 in 
+Merged SHA cbff34449c17cbfe9d2921702f804055a71b1352 with commit message 'Update Dockerfile' into base branch master
+Merged SHA fae7717c321717b203610882aaad354daebd9c62 with commit message 'Update Dockerfile' into base branch master
+Merged SHA bc87d726c965b705d3394e65f34da2e19466b0c8 with commit message 'Update Dockerfile' into base branch master
+Merged SHA fd08bacf0ea047dc650da002f904be21c2630e3a with commit message 'Merge branch 'master' into new-branch' into base branch master
+Merged SHA 40eec3644183dd835711779d78007b86a96a3467 with commit message 'check' into base branch master
+Merged SHA 314ebd8f1472b4b6e684bee7974c14a03c40b571 with commit message 'Update values.yaml' into base branch master
+Merged SHA e05f1f88248239db3ad2b6caf5df7e1491060ba2 with commit message 'Update Makefile' into base branch master
+Merged SHA c3f666fde90e42bb19728f17decd45c80b37f816 with commit message 'Update requirements.yaml' into base branch master
+Merged SHA 88489eeb03b2976a47b7b16860bbd9b703f44dda with commit message 'Update Makefile' into base branch master
+Merged SHA 58a844a419ab5c523da9935405f3323ba1e3803a with commit message 'Update skaffold.yaml' into base branch master
+
+Showing logs for build [32mhack19-hub-hello-world-spring-b-c5v4v-5[0m stage [32mfrom-build-pack[0m and container [32mstep-build-set-version[0m
+Picked up _JAVA_OPTIONS: -XX:+UnlockExperimentalVMOptions -XX:+UseCGroupMemoryLimitForHeap -Dsun.zip.disableMemoryMapping=true -XX:+UseParallelGC -XX:MinHeapFreeRatio=5 -XX:MaxHeapFreeRatio=10 -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Xms10m -Xmx192m
+OpenJDK 64-Bit Server VM warning: If the number of processors is expected to increase from one, then you should configure the number of parallel GC threads appropriately using -XX:ParallelGCThreads=N
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< com.example:myproject >------------------------
+[INFO] Building myproject 0.0.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- versions-maven-plugin:2.2:set (default-cli) @ myproject ---
+[INFO] Searching for local aggregator root...
+[INFO] Local aggregation root: /workspace/source
+[INFO] Processing change of com.example:myproject:0.0.1-SNAPSHOT -> 0.0.0-SNAPSHOT-PR-1-5
+[INFO] Processing com.example:myproject
+[INFO]     Updating project com.example:myproject
+[INFO]         from version 0.0.1-SNAPSHOT to 0.0.0-SNAPSHOT-PR-1-5
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  6.446 s
+[INFO] Finished at: 2019-11-06T06:59:07Z
+[INFO] ------------------------------------------------------------------------
+
+Showing logs for build [32mhack19-hub-hello-world-spring-b-c5v4v-5[0m stage [32mfrom-build-pack[0m and container [32mstep-build-mvn-install[0m
+Picked up _JAVA_OPTIONS: -XX:+UnlockExperimentalVMOptions -XX:+UseCGroupMemoryLimitForHeap -Dsun.zip.disableMemoryMapping=true -XX:+UseParallelGC -XX:MinHeapFreeRatio=5 -XX:MaxHeapFreeRatio=10 -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Xms10m -Xmx192m
+OpenJDK 64-Bit Server VM warning: If the number of processors is expected to increase from one, then you should configure the number of parallel GC threads appropriately using -XX:ParallelGCThreads=N
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< com.example:myproject >------------------------
+[INFO] Building myproject 0.0.0-SNAPSHOT-PR-1-5
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ myproject ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /workspace/source/src/main/resources
+[INFO] skip non existing resourceDirectory /workspace/source/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ myproject ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /workspace/source/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ myproject ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /workspace/source/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ myproject ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:3.0.0-M1:test (default-test) @ myproject ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.5:jar (default-jar) @ myproject ---
+[INFO] Building jar: /workspace/source/target/myproject-0.0.0-SNAPSHOT-PR-1-5.jar
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:1.3.1.RELEASE:repackage (default) @ myproject ---
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ myproject ---
+[INFO] Installing /workspace/source/target/myproject-0.0.0-SNAPSHOT-PR-1-5.jar to /root/.mvnrepository/com/example/myproject/0.0.0-SNAPSHOT-PR-1-5/myproject-0.0.0-SNAPSHOT-PR-1-5.jar
+[INFO] Installing /workspace/source/pom.xml to /root/.mvnrepository/com/example/myproject/0.0.0-SNAPSHOT-PR-1-5/myproject-0.0.0-SNAPSHOT-PR-1-5.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  8.765 s
+[INFO] Finished at: 2019-11-06T06:59:17Z
+[INFO] ------------------------------------------------------------------------
+
+Showing logs for build [32mhack19-hub-hello-world-spring-b-c5v4v-5[0m stage [32mfrom-build-pack[0m and container [32mstep-build-skaffold-version[0m
+v0.38.0
+
+Showing logs for build [32mhack19-hub-hello-world-spring-b-c5v4v-5[0m stage [32mfrom-build-pack[0m and container [32mstep-build-container-build[0m
+[36mINFO[0m[0000] Downloading base image java                  
+[36mINFO[0m[0001] Error while retrieving image from cache: getting file info: stat /workspace/sha256:c1ff613e8ba25833d2e1940da0940c3824f03f802c449f3d1815a66b7f8c0e9d: no such file or directory 
+[36mINFO[0m[0001] Downloading base image java                  
+[36mINFO[0m[0001] Executing 0 build triggers                   
+error building image: error building stage: when specifying multiple sources in a COPY command, destination must be a directory and end in '/'
+[31m
+Pipeline failed on stage 'from-build-pack' : container 'step-build-container-build'. The execution of the pipeline has stopped.[0m
